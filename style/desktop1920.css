@@ -9,6 +9,16 @@
   left: 0px;
   z-index: 15;
 }
+@font-face {
+  font-family: "Forma DJR Cyrilic Variable";
+  src: url("../fonts/FormaDJRCyrillicDeck-Medium-Testing.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Forma DJR Cyrilic Variable";
+  src: url("../FormaDJRCyrillicDeck-Regular-Testing.woff") format("woff");
+  font-weight: 300;
+}
 .plate_h {
   position: relative;
   display: flex;
