@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 500px) and (max-width: 1670px)"
+      href="style/desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 200px) and (max-width: 500px)"
+      href="style/phone.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1670px) and (max-width: 1910px)"
+      href="style/desktop1680.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1910px) and (max-width: 2300px)"
+      href="style/desktop1920.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 2300px) and (max-width: 4000px)"
+      href="style/desktop2560.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      $(function () {
+        $("a").each(function () {
+          $(this).on("click", function (e) {
+            e.preventDefault();
+            var scrollTo = $(this).attr("href");
+            var whitespace = scrollTo == "#s1" ? 70 : 30;
+            $("html,body").animate(
+              {
+                scrollTop: $(scrollTo).offset().top - whitespace,
+              },
+              1000
+            );
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="plate_h">
+        <div class="menu">
+          <div class="menu_items">
+            <div class="logo">RUKI</div>
+            <div class="burger">
+              <img src="images/burger.png" alt="" />
+            </div>
+            <div class="sections">
+              <a href="#about">о нас</a>
+              <a href="#mission">миссия</a>
+              <a href="#advantage">особенности</a>
+              <a href="#contact">контакты</a>
+            </div>
+          </div>
+          <div class="header_button">
+            <div class="h_b_text">
+              cкачать приложение
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ruki">
+      <div class="cover_screen">
+        <div class="cover_frame">
+          <div class="cover_text">
+            Изучай язык жестов вместе с Ruki
+          </div>
+          <div class="cover_button_frame">
+            <div class="cover_button_1">
+              <div class="c_b_text">
+                Скачать
+              </div>
+            </div>
+            <div class="cover_button_2">
+              <div class="c_b_text_2">
+                Подробнее
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Group1">
+          <img src="images/Group1.png" alt="" />
+        </div>
+        <div class="Group2">
+          <img src="images/Group2.png" alt="" />
+        </div>
+        <div class="Group1_mob">
+          <img src="images/Group1_mob.png" alt="" />
+        </div>
+        <div class="Group2_mob">
+          <img src="images/Group2_mob.png" alt="" />
+        </div>
+      </div>
+      <div id="about" class="about_screen">
+        <div class="Group3">
+          <img src="images/Group3.png" alt="" />
+        </div>
+        <div class="Group4">
+          <img src="images/Group4.png" alt="" />
+        </div>
+        <div class="test_mob_3">
+          <div class="Group3_mob">
+            <img src="images/Group3_mob.png" alt="" />
+          </div>
+        </div>
+
+        <div class="about_plate">
+          <div class="about_plate_mob">
+            <div class="about_text">
+              Мы помогаем людям с нарушениями слуха и речи наладить невербальную
+              коммуникацию с окружающими при помощи изучения РЖЯ в игровой форме
+            </div>
+          </div>
+          <div class="Group5">
+            <img src="images/Group5.png" alt="" />
+            <div class="about_frame">
+              <div class="about_text">
+                Мы помогаем людям с нарушениями слуха и речи наладить
+                невербальную коммуникацию с окружающими
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mission" class="mission_screen">
+        <div class="mission_frame">
+          <div class="mission_text">
+            Мы призваны устранить барьер в комуникации людей, сделать общение
+            комфортным
+          </div>
+        </div>
+        <div class="Group7">
+          <img src="images/Group7.png" alt="" />
+        </div>
+        <div class="Group8">
+          <img src="images/Group8.png" alt="" />
+        </div>
+        <div class="test">
+          <div class="Group9">
+            <img src="images/Group9.png" alt="" />
+          </div>
+        </div>
+        <div class="iphones_frame">
+          <div class="iphones">
+            <img src="images/iphones.png" alt="" />
+          </div>
+        </div>
+        <div class="Group10">
+          <img src="images/Group10.png" alt="" />
+        </div>
+        <div class="Group11">
+          <img src="images/Group11.png" alt="" />
+        </div>
+        <div class="mission_frame_2">
+          <div class="mission_text_2">
+            Нравится язык жестов? Скачивай приложение!
+          </div>
+          <div class="cover_button_frame_2">
+            <div class="apple">
+              <img src="images/download-on-the-app-store.png" alt="" />
+            </div>
+            <div class="google">
+              <img src="images/google.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="test_mob_4">
+          <div class="Group4_mob">
+            <img src="images/Group4_mob.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="advantage" class="advantage_screen">
+        <div class="text_frame_1">
+          <div class="advantage_text_1">
+            Большая коллецкия материалов для изучения
+          </div>
+          <div class="advantage_text_2">
+            Смотрите обучающие видео и схемы для качественного и удобного
+            изучения жестов
+          </div>
+        </div>
+        <div class="Group12">
+          <img src="images/Group12.png" alt="" />
+        </div>
+        <div class="Group13">
+          <img src="images/Group13.png" alt="" />
+        </div>
+        <div class="Group14">
+          <img src="images/Group14.png" alt="" />
+        </div>
+        <div class="test_mob_5">
+          <div class="Group5_mob">
+            <img src="images/Group5_mob.png" alt="" />
+          </div>
+        </div>
+        <div class="test_mob_6">
+          <div class="Group6_mob">
+            <img src="images/Group6_mob.png" alt="" />
+          </div>
+        </div>
+        <div class="test_mob_7">
+          <div class="Group7_mob">
+            <img src="images/Group7_mob.png" alt="" />
+          </div>
+        </div>
+        <div class="text_frame_2">
+          <div class="advantage_text_1">
+            Полезные тесты для оттачивания знаний
+          </div>
+          <div class="advantage_text_2">
+            Проходите тесты и закрепляйте полученные знания на практике
+          </div>
+        </div>
+        <div class="Group15">
+          <img src="images/Group15.png" alt="" />
+        </div>
+        <div class="text_frame_3">
+          <div class="advantage_text_1">
+            Интересные статьи и лайфхаки для РЖЯ
+          </div>
+          <div class="advantage_text_2">
+            Используй десктопную версию, чтобы читать статьи про язык жестов
+            и пользоваться удобным словарем
+          </div>
+        </div>
+        <div class="Group16">
+          <img src="images/Group16.png" alt="" />
+        </div>
+      </div>
+      <div id="contact" class="footer">
+        <div class="test17">
+          <div class="Group17">
+            <img src="images/Group17.png" alt="" />
+          </div>
+        </div>
+        <div class="test_mob_8">
+          <div class="Group8_mob">
+            <img src="images/Group8_mob.png" alt="" />
+          </div>
+        </div>
+        <div class="email_frame">
+          <div class="email_text_1">
+            Подпишись на рассылку
+          </div>
+          <div class="email_text_2">
+            Чтобы следить за обновлениями
+          </div>
+          <div class="input_frame">
+            <div class="input1">
+              <div class="name">
+                Имя
+              </div>
+              <input type="text" name="" value="Имя" />
+            </div>
+            <div class="input1">
+              <div class="name">
+                E-mail
+              </div>
+              <input type="text" name="" value="Email" />
+            </div>
+          </div>
+          <div class="email_button_1">
+            <div class="e_b_text">
+              Подписаться
+            </div>
+          </div>
+        </div>
+        <div class="footer_frame">
+          <div class="main_footer">
+            <div class="footer_row">
+              <div class="footer_text_1">
+                Контакты
+              </div>
+              <div class="footer_text_2">
+                +7325730972
+              </div>
+              <div class="footer_text_2">
+                ruki.app@gmail.com
+              </div>
+            </div>
+            <div class="footer_row">
+              <div class="footer_text_1">
+                Соц. сети
+              </div>
+              <div class="footer_text_2">
+                @ruki.app
+              </div>
+            </div>
+            <div class="footer_row_d">
+              <div class="footer_text_1">
+                Скачать
+              </div>
+              <div class="footer_button_frame_2">
+                <div class="apple_f">
+                  <img src="images/download-on-the-app-store.png" alt="" />
+                </div>
+                <div class="google_f">
+                  <img src="images/google.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="footer_row_d">
+              <div class="footer_text_3">
+                Политика конфиденциальности
+              </div>
+              <div class="footer_text_3">
+                Команда
+              </div>
+              <div class="footer_text_3">
+                Обратная связь
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
